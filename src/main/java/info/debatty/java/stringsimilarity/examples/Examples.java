@@ -124,18 +124,18 @@ public class Examples {
         // =====
         // produces 0.416666
         NGram twogram = new NGram(2);
-        System.out.println(twogram.distance("ABCD", "ABTUIO"));
+        //System.out.println(twogram.distance("ABCD", "ABTUIO"));
 
         // produces 0.97222
         String s1 = "Adobe CreativeSuite 5 Master Collection from cheap 4zp";
         String s2 = "Adobe CreativeSuite 5 Master Collection from cheap d1x";
         NGram ngram = new NGram(4);
-        System.out.println(ngram.distance(s1, s2));
+        //System.out.println(ngram.distance(s1, s2));
 
         // Normalized Levenshtein
         // ======================
         NormalizedLevenshtein l = new NormalizedLevenshtein();
-
+        System.out.println("\n\n");
         System.out.println(l.distance("My string", "My $tring"));
         System.out.println(l.distance("My string", "M string2"));
         System.out.println(l.distance("My string", "abcd"));
